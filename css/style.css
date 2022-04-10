@@ -1,0 +1,106 @@
+body {
+    background-color: white;
+    font-family: cursive;
+}
+
+.glow {
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #e60073, 0 0 4px #e60073, 0 0 5px #e60073, 0 0 6px #e60073, 0 0 7px #e60073;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 3px #ff4da6, 0 0 4px #ff4da6, 0 0 5px #ff4da6, 0 0 6px #ff4da6, 0 0 7px #ff4da6, 0 0 8px #ff4da6;
+    }
+}
+
+.title {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 240px;
+    color: blue;
+    border: solid black 2px;
+}
+
+input[type="button"] {
+    background-color: inherit;
+    color: black;
+    border: unset;
+    font-size: x-large;
+}
+
+button {
+    color: black;
+    border: unset;
+    background: inherit;
+    width: 100%;
+    font-size: x-large;
+}
+
+input[type="text"] {
+    border: none;
+    width: 100%;
+    background: inherit;
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+
+.frac>span {
+    font-size: 50%;
+    display: block;
+    padding: 0.1em;
+}
+
+.frac span.bottom {
+    border-top: thin solid black;
+}
+
+.frac span.symbol {
+    display: none;
+}
+
+body {
+    margin: 10% auto;
+}
+
+table {
+    height: 500px;
+    width: 500px;
+    background-color: #c3d3d9;
+    background-image: linear-gradient(#c3d3d9, #cdc7c7);
+    border-radius: 7px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.t {
+    text-align: center;
+}
+
+td {
+    width: 35px;
+    height: 35px;
+    border: 2px rgb(215 213 213) solid;
+    text-align: center;
+    transition: .3s;
+}
+
+td:hover {
+    background-color: #ece7e77a;
+    ;
+}
+
+td:hover input {
+    background-color: unset;
+}

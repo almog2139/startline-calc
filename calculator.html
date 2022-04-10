@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/js.js"></script>
+
+</head>
+<!-- create table -->
+
+<body>
+    <div class=t itle>Calculator</div>
+    <table border="5" cellpadding="10">
+        <tr>
+            <td colspan="3"><input type="text" id="result" /></td>
+            <!-- clearResult() function will call clearResult to clear all value -->
+            <td><input type="button" value="c" onclick="clearResult()" /> </td>
+
+            <!-- removeChar() function will remove the last character from the result -->
+            <td><input type="button" value="&#11013" onclick="removeChar()" /> </td>
+        </tr>
+
+        <!-- Bonus Area -->
+
+        <td><button id=1 x onclick="onOneOver()">
+		<div class="frac"><span>1</span><span class="symbol">/</span><span class="bottom">X</span></div></button> </td>
+        <td><button id=x 2 onclick="onSquare()">X<sup>2</sup></button> </td>
+        <td><input type="button" value="|X|" onclick="onAbs()" /></td>
+        <td><input type="button" value="%" onclick="onPress('%')" /> </td>
+        <td><input type="button" value="M*" onclick="onMemoryMultiply()" /> </td>
+        </tr>
+
+
+        <tr>
+            <!-- create button and assign value to each button -->
+            <!-- onPress("1") will call function onPress to add a key -->
+            <td><input type="button" value="1" onclick="onPress('1')" /> </td>
+            <td><input type="button" value="2" onclick="onPress('2')" /> </td>
+            <td><input type="button" value="3" onclick="onPress('3')" /> </td>
+            <td><input type="button" value="/" onclick="onPress('/')" /> </td>
+            <td><input type="button" value="M+" onclick="onMemoryAdd()" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="onPress('4')" /> </td>
+            <td><input type="button" value="5" onclick="onPress('5')" /> </td>
+            <!--(A)-->
+            <td><input type="button" value="6" onclick="onPress('6')" /> </td>
+            <td><input type="button" value="-" onclick="onPress('-')" /> </td>
+            <td><input type="button" value="M-" onclick="onMemorySubstract('')" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="onPress('7')" /> </td>
+            <td><input type="button" value="8" onclick="onPress('8')" /> </td>
+            <td><input type="button" value="9" onclick="onPress('9')" /> </td>
+            <td><input type="button" value="+" onclick="onPress('+')" /> </td>
+            <td><input type="button" value="MR" onclick="onMemoryRecall()" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="onPress('.')" /> </td>
+            <td><input type="button" value="0" onclick="onPress('0')" /> </td>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()" /> </td>
+            <td><input type="button" value="*" onclick="onPress('*')" /> </td>
+            <td><input type="button" value="MC" onclick="onMemoryClear()" /> </td>
+            <!--(G)-->
+        </tr>
+    </table>
+</body>
+
+</html>
